@@ -70,6 +70,24 @@ html,body{
     font-weight: 500;
     margin-left: 40px;
 }
+/* Adjust styles for the anchor tags in the navigation bar */
+#nav a {
+  color: #fff;
+  transition: color 0.3s ease-in-out; /* Add transition effect for smooth color change */
+}
+
+#nav a:hover,
+#nav a:active,
+#nav a:focus {
+  color: #000; /* Change color to black on hover, active, and focus */
+}
+
+/* ... (your existing CSS code) ... */
+
+
+
+/* ... (your existing CSS code) ... */
+
 #hero{
     margin-top: 80px;
     position: absolute;
@@ -141,7 +159,9 @@ html,body{
 /* Add this CSS to make the "Our Products" heading more attractive */
 .product-section{
     background: url('images/madison-agardi-QNrjcp90tVc-unsplash.jpg') center/cover; /* Add your image path */
+    padding: 50px 0; 
 }
+
 .heading {
     text-align: center;
    
@@ -218,5 +238,142 @@ html,body{
     background-color: #0b7dda; /* Change background on hover */
   }
 
+/* Add this CSS for the new about section */
+.about-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
 
+.about-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Adjust styles for the anchor tag in the navigation bar */
+
+
+#main > div:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Add this CSS for the new contact section */
+.contact-section {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact-form {
+  /* Add styles for the contact form as needed */
+}
+
+.contact-container a {
+  color: black; /* Set the text color for the "Contact" link */
+}
+
+/* Adjust styles for the anchor tag in the navigation bar */
+
+
+/* Remove margin-bottom for the last section */
+#main > div:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  #working {
+    width: 90%;
+  }
+
+  #nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #nleft,
+  #nright {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  #hleft,
+  #hright {
+    width: 100%;
+  }
+
+  #hright {
+    text-align: center;
+    align-items: center;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .product-item {
+    margin: 0;
+    width: 100%;
+  }
+
+  .see-all-button {
+    margin-top: 10px;
+  }
+
+  .about-container,
+  .contact-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nleft {
+    margin-bottom: 10px;
+  }
+
+  #nright {
+    margin-top: 10px;
+  }
+}
+
+
+/* Add any additional responsive styles as needed */
 
