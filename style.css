@@ -257,11 +257,10 @@ html,body{
 }
 
 .about-container p {
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.2em;
+  line-height: 1.8;
   color: #555;
 }
-
 /* Adjust styles for the anchor tag in the navigation bar */
 
 
@@ -270,7 +269,7 @@ html,body{
 }
 
 
-/* Add this CSS for the new contact section */
+/* Updated styles for the new contact section */
 .contact-section {
   background-color: #f0f0f0;
   padding: 50px 0;
@@ -278,8 +277,8 @@ html,body{
 }
 
 .contact-container {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin:100 auto;
 }
 
 .contact-container h2 {
@@ -289,26 +288,55 @@ html,body{
 }
 
 .contact-container p {
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.2em;
+  line-height: 1.8;
   color: #555;
 }
 
 .contact-form {
-  /* Add styles for the contact form as needed */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #2196F3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: red;
 }
 
 .contact-container a {
-  color: black; /* Set the text color for the "Contact" link */
+  color: black;
 }
-
 /* Adjust styles for the anchor tag in the navigation bar */
 
 
 /* Remove margin-bottom for the last section */
-#main > div:last-child {
-  margin-bottom: 0;
-}
+
 
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
@@ -359,21 +387,68 @@ html,body{
     width: 90%;
   }
 }
-@media only screen and (max-width: 750px) {
+
+
+/* Responsive styles for iPhone SE */
+@media only screen and (max-width: 320px) {
+  /* Adjustments for iPhone SE */
+
+  #working {
+    width: 95%;
+  }
+
   #nav {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
-  #nleft {
-    margin-bottom: 10px;
-  }
-
+  #nleft,
   #nright {
+    flex-direction: column;
+    gap: 10px;
     margin-top: 10px;
+  }
+
+  #nav img {
+    height: 70px; /* Adjust logo height */
+  }
+
+  #hleft .elem h1 {
+    font-size: 4vw; /* Adjust font size for hero section */
+  }
+
+  #hright {
+    width: 90%;
+  }
+
+  #hright p {
+    text-align: center;
+    font-size: 14px; /* Adjust font size for hero section */
+  }
+
+  #hright #imagediv {
+    height: 100px; /* Adjust image height in hero section */
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .product-item {
+    margin: 0;
+    width: 100%;
+  }
+
+  .see-all-button {
+    margin-top: 10px;
+  }
+
+  .about-container,
+  .contact-container {
+    width: 95%;
   }
 }
 
 
-/* Add any additional responsive styles as needed */
 
